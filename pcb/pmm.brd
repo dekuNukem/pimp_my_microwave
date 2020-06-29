@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="5" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="1" altunitdist="mil" altunit="mil"/>
+<grid distance="5" unitdist="mil" unit="mm" style="lines" multiple="1" display="no" altdistance="1" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -773,7 +773,7 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <element name="LED2" library="adafruit" package="CHIP-LED0805" value="" x="3.429" y="23.114" smashed="yes" rot="R270">
 <attribute name="VALUE" x="2.159" y="20.574" size="1.27" layer="27"/>
 </element>
-<element name="R7" library="SparkFun-Passives" package="0805" value="2K" x="8.0518" y="23.495" smashed="yes" rot="R180">
+<element name="R6" library="SparkFun-Passives" package="0805" value="2K" x="8.0518" y="23.495" smashed="yes" rot="R180">
 <attribute name="NAME" x="8.6868" y="25.2095" size="0.8128" layer="25" rot="R180"/>
 </element>
 <element name="R5" library="joyAnalog" package="0805" value="10K" x="27.94" y="20.193" smashed="yes" rot="R180">
@@ -999,10 +999,10 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <contactref element="C1" pad="1"/>
 <contactref element="C2" pad="2"/>
 <polygon width="0.1524" layer="1" isolate="0.254">
-<vertex x="0" y="35.052"/>
+<vertex x="0" y="35"/>
 <vertex x="0" y="0"/>
-<vertex x="29.972" y="0"/>
-<vertex x="29.972" y="35.052"/>
+<vertex x="30" y="0"/>
+<vertex x="30" y="35"/>
 </polygon>
 <contactref element="U$1" pad="4"/>
 <contactref element="U$1" pad="21"/>
@@ -1012,7 +1012,7 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <contactref element="C4" pad="1"/>
 <contactref element="SW3" pad="P$1"/>
 <contactref element="SW3" pad="P$4"/>
-<contactref element="R7" pad="1"/>
+<contactref element="R6" pad="1"/>
 <contactref element="R5" pad="1"/>
 <contactref element="U$6" pad="5"/>
 <wire x1="27.94" y1="33.02" x2="26.3398" y2="34.6202" width="0.1524" layer="1"/>
@@ -1035,9 +1035,9 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <contactref element="IC2" pad="4"/>
 <contactref element="C2" pad="1"/>
 <polygon width="0.1524" layer="16">
-<vertex x="0" y="35.052"/>
-<vertex x="29.972" y="35.052"/>
-<vertex x="29.972" y="0"/>
+<vertex x="0" y="35"/>
+<vertex x="30" y="35"/>
+<vertex x="30" y="0"/>
 <vertex x="0" y="0"/>
 </polygon>
 <contactref element="IC3" pad="16"/>
@@ -1269,7 +1269,7 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 </signal>
 <signal name="N$29">
 <contactref element="LED2" pad="C"/>
-<contactref element="R7" pad="2"/>
+<contactref element="R6" pad="2"/>
 <wire x1="7.1518" y1="23.495" x2="6.7708" y2="23.114" width="0.1524" layer="1"/>
 <wire x1="6.7708" y1="23.114" x2="4.479" y2="23.114" width="0.1524" layer="1"/>
 </signal>

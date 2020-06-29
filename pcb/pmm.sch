@@ -5867,7 +5867,7 @@ Source: http://www.osram.convergy.de/</description>
 <part name="+3V9" library="backplane" deviceset="+3V3" device=""/>
 <part name="+3V16" library="backplane" deviceset="+3V3" device=""/>
 <part name="LED2" library="adafruit" deviceset="LED" device="CHIP-LED0805"/>
-<part name="R7" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="2K"/>
+<part name="R6" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="2K"/>
 <part name="GND9" library="backplane" deviceset="GND" device=""/>
 <part name="+3V2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="R5" library="joyAnalog" deviceset="RESISTOR" device="0805-RES" value="10K"/>
@@ -6068,7 +6068,7 @@ SW_0</text>
 <attribute name="NAME" x="113.792" y="74.676" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="113.792" y="76.835" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="R7" gate="G$1" x="119.38" y="71.12" smashed="yes" rot="R180">
+<instance part="R6" gate="G$1" x="119.38" y="71.12" smashed="yes" rot="R180">
 <attribute name="NAME" x="123.19" y="69.6214" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="123.19" y="74.422" size="1.778" layer="96" rot="R180"/>
 </instance>
@@ -6361,7 +6361,7 @@ SW_0</text>
 <junction x="93.98" y="40.64"/>
 </segment>
 <segment>
-<pinref part="R7" gate="G$1" pin="1"/>
+<pinref part="R6" gate="G$1" pin="1"/>
 <pinref part="GND9" gate="1" pin="GND"/>
 </segment>
 <segment>
@@ -6634,7 +6634,7 @@ SW_0</text>
 <net name="N$29" class="0">
 <segment>
 <pinref part="LED2" gate="G$1" pin="C"/>
-<pinref part="R7" gate="G$1" pin="2"/>
+<pinref part="R6" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$6" class="0">
