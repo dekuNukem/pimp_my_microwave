@@ -1312,9 +1312,9 @@ Image Symbol Table
     _printf_core                             0x080014e1   Thumb Code   688  printf5.o(i._printf_core)
     i.fputc                                  0x080017bc   Section        0  main.o(i.fputc)
     i.main                                   0x080017d4   Section        0  main.o(i.main)
-    i.spi_test                               0x08001814   Section        0  helpers.o(i.spi_test)
-    .constdata                               0x080018b4   Section       16  system_stm32f0xx.o(.constdata)
-    .constdata                               0x080018c4   Section        8  system_stm32f0xx.o(.constdata)
+    i.spi_test                               0x08001810   Section        0  helpers.o(i.spi_test)
+    .constdata                               0x080018b0   Section       16  system_stm32f0xx.o(.constdata)
+    .constdata                               0x080018c0   Section        8  system_stm32f0xx.o(.constdata)
     .data                                    0x20000000   Section        4  stm32f0xx_hal.o(.data)
     .data                                    0x20000004   Section        4  system_stm32f0xx.o(.data)
     .data                                    0x20000008   Section        4  stdout.o(.data)
@@ -1466,11 +1466,11 @@ Image Symbol Table
     __scatterload_zeroinit                   0x080014d1   Thumb Code    14  handlers.o(i.__scatterload_zeroinit)
     fputc                                    0x080017bd   Thumb Code    18  main.o(i.fputc)
     main                                     0x080017d5   Thumb Code    58  main.o(i.main)
-    spi_test                                 0x08001815   Thumb Code    82  helpers.o(i.spi_test)
-    AHBPrescTable                            0x080018b4   Data          16  system_stm32f0xx.o(.constdata)
-    APBPrescTable                            0x080018c4   Data           8  system_stm32f0xx.o(.constdata)
-    Region$$Table$$Base                      0x080018cc   Number         0  anon$$obj.o(Region$$Table)
-    Region$$Table$$Limit                     0x080018ec   Number         0  anon$$obj.o(Region$$Table)
+    spi_test                                 0x08001811   Thumb Code    82  helpers.o(i.spi_test)
+    AHBPrescTable                            0x080018b0   Data          16  system_stm32f0xx.o(.constdata)
+    APBPrescTable                            0x080018c0   Data           8  system_stm32f0xx.o(.constdata)
+    Region$$Table$$Base                      0x080018c8   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x080018e8   Number         0  anon$$obj.o(Region$$Table)
     uwTick                                   0x20000000   Data           4  stm32f0xx_hal.o(.data)
     SystemCoreClock                          0x20000004   Data           4  system_stm32f0xx.o(.data)
     __stdout                                 0x20000008   Data           4  stdout.o(.data)
@@ -1486,9 +1486,9 @@ Memory Map of the image
 
   Image Entry point : 0x080000c1
 
-  Load Region LR_IROM1 (Base: 0x08000000, Size: 0x000018f8, Max: 0x00008000, ABSOLUTE)
+  Load Region LR_IROM1 (Base: 0x08000000, Size: 0x000018f4, Max: 0x00008000, ABSOLUTE)
 
-    Execution Region ER_IROM1 (Exec base: 0x08000000, Load base: 0x08000000, Size: 0x000018ec, Max: 0x00008000, ABSOLUTE)
+    Execution Region ER_IROM1 (Exec base: 0x08000000, Load base: 0x08000000, Size: 0x000018e8, Max: 0x00008000, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
@@ -1565,20 +1565,21 @@ Memory Map of the image
     0x080014de   0x080014de   0x00000002   PAD
     0x080014e0   0x080014e0   0x000002dc   Code   RO         2605    i._printf_core      mc_p.l(printf5.o)
     0x080017bc   0x080017bc   0x00000018   Code   RO           17    i.fputc             main.o
-    0x080017d4   0x080017d4   0x00000040   Code   RO           18    i.main              main.o
-    0x08001814   0x08001814   0x000000a0   Code   RO          258    i.spi_test          helpers.o
-    0x080018b4   0x080018b4   0x00000010   Data   RO         2428    .constdata          system_stm32f0xx.o
-    0x080018c4   0x080018c4   0x00000008   Data   RO         2429    .constdata          system_stm32f0xx.o
-    0x080018cc   0x080018cc   0x00000020   Data   RO         2764    Region$$Table       anon$$obj.o
+    0x080017d4   0x080017d4   0x0000003a   Code   RO           18    i.main              main.o
+    0x0800180e   0x0800180e   0x00000002   PAD
+    0x08001810   0x08001810   0x000000a0   Code   RO          258    i.spi_test          helpers.o
+    0x080018b0   0x080018b0   0x00000010   Data   RO         2428    .constdata          system_stm32f0xx.o
+    0x080018c0   0x080018c0   0x00000008   Data   RO         2429    .constdata          system_stm32f0xx.o
+    0x080018c8   0x080018c8   0x00000020   Data   RO         2764    Region$$Table       anon$$obj.o
 
 
-    Execution Region RW_IRAM1 (Exec base: 0x20000000, Load base: 0x080018ec, Size: 0x000004e0, Max: 0x00001800, ABSOLUTE)
+    Execution Region RW_IRAM1 (Exec base: 0x20000000, Load base: 0x080018e8, Size: 0x000004e0, Max: 0x00001800, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
-    0x20000000   0x080018ec   0x00000004   Data   RW         1257    .data               stm32f0xx_hal.o
-    0x20000004   0x080018f0   0x00000004   Data   RW         2430    .data               system_stm32f0xx.o
-    0x20000008   0x080018f4   0x00000004   Data   RW         2740    .data               mc_p.l(stdout.o)
+    0x20000000   0x080018e8   0x00000004   Data   RW         1257    .data               stm32f0xx_hal.o
+    0x20000004   0x080018ec   0x00000004   Data   RW         2430    .data               system_stm32f0xx.o
+    0x20000008   0x080018f0   0x00000004   Data   RW         2740    .data               mc_p.l(stdout.o)
     0x2000000c        -       0x000000d4   Zero   RW           19    .bss                main.o
     0x200000e0        -       0x00000400   Zero   RW            1    STACK               startup_stm32f042x6.o
 
@@ -1591,7 +1592,7 @@ Image component sizes
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
 
        160         78          0          0          0        531   helpers.o
-       422         38          0          0        212     423944   main.o
+       416         32          0          0        212     423944   main.o
         88         38        192          0       1024        648   startup_stm32f042x6.o
        122         18          0          4          0       3631   stm32f0xx_hal.o
        158         22          0          0          0       9922   stm32f0xx_hal_cortex.o
@@ -1604,9 +1605,9 @@ Image component sizes
         92         14         24          4          0       1147   system_stm32f0xx.o
 
     ----------------------------------------------------------------------
-      5072        390        248          8       1236     463252   Object Totals
+      5068        384        248          8       1236     463252   Object Totals
          0          0         32          0          0          0   (incl. Generated)
-        12          0          0          0          0          0   (incl. Padding)
+        14          0          0          0          0          0   (incl. Padding)
 
     ----------------------------------------------------------------------
 
@@ -1649,15 +1650,15 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-      6132        458        248         12       1236     461864   Grand Totals
-      6132        458        248         12       1236     461864   ELF Image Totals
-      6132        458        248         12          0          0   ROM Totals
+      6128        452        248         12       1236     461864   Grand Totals
+      6128        452        248         12       1236     461864   ELF Image Totals
+      6128        452        248         12          0          0   ROM Totals
 
 ==============================================================================
 
-    Total RO  Size (Code + RO Data)                 6380 (   6.23kB)
+    Total RO  Size (Code + RO Data)                 6376 (   6.23kB)
     Total RW  Size (RW Data + ZI Data)              1248 (   1.22kB)
-    Total ROM Size (Code + RO Data + RW Data)       6392 (   6.24kB)
+    Total ROM Size (Code + RO Data + RW Data)       6388 (   6.24kB)
 
 ==============================================================================
 

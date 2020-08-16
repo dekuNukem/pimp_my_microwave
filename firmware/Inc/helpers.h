@@ -7,20 +7,20 @@
 
 #include "stm32f0xx_hal.h"
 
-#define button_4 15
-#define button_5 14
-#define button_6 13
-#define button_stop 12
-#define button_start 11
-#define button_1 10
-#define button_2 9
-#define button_3 8
-#define button_power 7
-#define button_time 6
-#define button_7 5
-#define button_8 4
-#define button_9 3
-#define button_0 2
+#define BUTTON_3 15
+#define BUTTON_2 14
+#define BUTTON_1 13
+#define BUTTON_START 12
+#define BUTTON_STOP 11
+#define BUTTON_6 10
+#define BUTTON_5 9
+#define BUTTON_4 8
+#define BUTTON_0 5
+#define BUTTON_9 4
+#define BUTTON_8 3
+#define BUTTON_7 2
+#define BUTTON_TIME 1
+#define BUTTON_POWER 0
 
 #define spi_cs_low() do { HAL_GPIO_WritePin(SPI1_CS_GPIO_Port, SPI1_CS_Pin, GPIO_PIN_RESET); } while (0)
 #define spi_cs_high() do { HAL_GPIO_WritePin(SPI1_CS_GPIO_Port, SPI1_CS_Pin, GPIO_PIN_SET); } while (0)

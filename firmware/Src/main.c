@@ -122,17 +122,17 @@ int main(void)
 10  button_6
 9   button_5
 8   button_4
-7   
-6   
-5   
-4   
-3   
-2   
-1   
-0   
+7   button_UNUSED
+6   button_UNUSED
+5   button_0
+4   button_9
+3   button_8
+2   button_7
+1   button_time
+0   button_power
 */
   spi_test(0);
-  uint16_t keypad = 0x81ff;
+  uint16_t keypad = 0x20;
 
   while (1)
   {
