@@ -5887,6 +5887,7 @@ Source: http://www.osram.convergy.de/</description>
 <part name="C5" library="clock" deviceset="CAP" device="0805" value="10uF"/>
 <part name="GND14" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND15" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="R7" library="joyAnalog" deviceset="RESISTOR" device="0805-RES" value="10K"/>
 </parts>
 <sheets>
 <sheet>
@@ -6029,8 +6030,8 @@ SW_0</text>
 <attribute name="NAME" x="57.3786" y="-6.35" size="1.778" layer="95" rot="MR90"/>
 <attribute name="VALUE" x="52.578" y="-6.35" size="1.778" layer="96" rot="MR90"/>
 </instance>
-<instance part="P+3" gate="1" x="55.88" y="5.08" smashed="yes">
-<attribute name="VALUE" x="53.34" y="0" size="1.778" layer="96" rot="R90"/>
+<instance part="P+3" gate="1" x="55.88" y="12.7" smashed="yes">
+<attribute name="VALUE" x="53.34" y="7.62" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="+3V1" gate="G$1" x="22.86" y="45.72" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="25.4" y="40.64" size="1.778" layer="96" rot="MR90"/>
@@ -6138,6 +6139,12 @@ SW_0</text>
 </instance>
 <instance part="GND15" gate="1" x="88.9" y="111.76" smashed="yes">
 <attribute name="VALUE" x="86.36" y="109.22" size="1.778" layer="96"/>
+</instance>
+<instance part="R7" gate="G$1" x="33.02" y="0" smashed="yes" rot="MR90">
+<attribute name="NAME" x="34.5186" y="-3.81" size="1.778" layer="95" rot="MR90"/>
+<attribute name="VALUE" x="29.718" y="-3.81" size="1.778" layer="96" rot="MR90"/>
+<attribute name="NAME" x="34.5186" y="-3.81" size="1.778" layer="95" rot="MR90"/>
+<attribute name="VALUE" x="29.718" y="-3.81" size="1.778" layer="96" rot="MR90"/>
 </instance>
 </instances>
 <busses>
@@ -6526,6 +6533,11 @@ SW_0</text>
 <segment>
 <pinref part="R3" gate="G$1" pin="2"/>
 <pinref part="P+3" gate="1" pin="+5V"/>
+<wire x1="55.88" y1="10.16" x2="55.88" y2="5.08" width="0.1524" layer="91"/>
+<pinref part="R7" gate="G$1" pin="2"/>
+<wire x1="55.88" y1="5.08" x2="55.88" y2="2.54" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="5.08" x2="55.88" y2="5.08" width="0.1524" layer="91"/>
+<junction x="55.88" y="5.08"/>
 </segment>
 <segment>
 <pinref part="P+4" gate="1" pin="+5V"/>
@@ -6566,7 +6578,11 @@ SW_0</text>
 <segment>
 <pinref part="U$1" gate="G$1" pin="DOUT"/>
 <pinref part="U$2" gate="G$1" pin="DIN"/>
-<wire x1="20.32" y1="-25.4" x2="38.1" y2="-25.4" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="-25.4" x2="33.02" y2="-25.4" width="0.1524" layer="91"/>
+<pinref part="R7" gate="G$1" pin="1"/>
+<wire x1="33.02" y1="-25.4" x2="38.1" y2="-25.4" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="-5.08" x2="33.02" y2="-25.4" width="0.1524" layer="91"/>
+<junction x="33.02" y="-25.4"/>
 </segment>
 </net>
 <net name="N$4" class="0">

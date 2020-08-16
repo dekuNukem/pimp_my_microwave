@@ -132,14 +132,13 @@ int main(void)
 0   
 */
   spi_test(0);
-  uint16_t keypad = 0xff00;
+  uint16_t keypad = 0x81ff;
 
   while (1)
   {
     HAL_GPIO_TogglePin(USER_LED_GPIO_Port, USER_LED_Pin);
-    printf("hello world\n");
     spi_test(keypad);
-    HAL_Delay(200);
+    HAL_Delay(500);
   /* USER CODE END WHILE */
 
   /* USER CODE BEGIN 3 */

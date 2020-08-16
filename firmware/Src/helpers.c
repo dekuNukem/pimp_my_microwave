@@ -28,8 +28,12 @@
 void spi_test(uint16_t value)
 {
   uint8_t spi_buf[2];
-  spi_buf[0] = value & 0xff;
-  spi_buf[1] = (value >> 8);
+  spi_buf[0] = (uint8_t)(value & 0xff);
+  spi_buf[1] = (uint8_t)(value >> 8);
+  printf("-------\n");
+  printf("value: 0x%x\n", value);
+  printf("spi_buf[0]: 0x%x\n", spi_buf[0]);
+  printf("spi_buf[1]: 0x%x\n", spi_buf[1]);
   spi_cs_low();
   HAL_SPI_Transmit(&hspi1, spi_buf, 2, 100);
   spi_cs_high();
