@@ -111,10 +111,34 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
+
+
+/*
+15  button_3
+14  button_2
+13  button_1
+12  button_start
+11  button_stop
+10  button_6
+9   button_5
+8   button_4
+7   
+6   
+5   
+4   
+3   
+2   
+1   
+0   
+*/
+  spi_test(0);
+  uint16_t keypad = 0xff00;
+
   while (1)
   {
     HAL_GPIO_TogglePin(USER_LED_GPIO_Port, USER_LED_Pin);
     printf("hello world\n");
+    spi_test(keypad);
     HAL_Delay(200);
   /* USER CODE END WHILE */
 
