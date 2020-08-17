@@ -197,7 +197,7 @@
 <text x="0.381" y="21.59" size="1.27" layer="21" rot="R270">A4</text>
 <text x="10.922" y="27.94" size="1.778" layer="22" rot="MR270">Pimp-my-microwave
 dekuNukem
-JUL2020 PT0</text>
+AUG2020 PT1</text>
 </plain>
 <libraries>
 <library name="pmm">
@@ -792,8 +792,8 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <element name="C5" library="clock" package="0805@1" value="10uF" x="24.638" y="13.843" smashed="yes" rot="R270">
 <attribute name="NAME" x="24.13" y="15.3035" size="0.8128" layer="25"/>
 </element>
-<element name="R7" library="joyAnalog" package="0805" value="10K" x="14.986" y="11.811" smashed="yes" rot="R90">
-<attribute name="NAME" x="15.5448" y="14.1859" size="0.8128" layer="25" rot="R180"/>
+<element name="R7" library="joyAnalog" package="0805" value="10K" x="14.986" y="11.938" smashed="yes" rot="R90">
+<attribute name="NAME" x="15.5448" y="14.3129" size="0.8128" layer="25" rot="R180"/>
 </element>
 </elements>
 <signals>
@@ -1181,10 +1181,10 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <wire x1="24.638" y1="13.208" x2="24.638" y2="12.943" width="0.1524" layer="1"/>
 <wire x1="22.871" y1="14.975" x2="24.638" y2="13.208" width="0.1524" layer="1"/>
 <contactref element="R7" pad="2"/>
-<wire x1="12.9178" y1="12.925" x2="14.772" y2="12.925" width="0.3048" layer="1"/>
-<wire x1="14.772" y1="12.925" x2="14.986" y2="12.711" width="0.3048" layer="1"/>
-<wire x1="17.0822" y1="12.925" x2="15.2" y2="12.925" width="0.3048" layer="1"/>
-<wire x1="15.2" y1="12.925" x2="14.986" y2="12.711" width="0.3048" layer="1"/>
+<wire x1="12.9178" y1="12.925" x2="14.899" y2="12.925" width="0.3048" layer="1"/>
+<wire x1="14.899" y1="12.925" x2="14.986" y2="12.838" width="0.3048" layer="1"/>
+<wire x1="17.0822" y1="12.925" x2="15.073" y2="12.925" width="0.3048" layer="1"/>
+<wire x1="15.073" y1="12.925" x2="14.986" y2="12.838" width="0.3048" layer="1"/>
 </signal>
 <signal name="N$1">
 <contactref element="IC3" pad="11"/>
@@ -1193,9 +1193,10 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <wire x1="12.075" y1="17.0822" x2="9.6884" y2="14.6956" width="0.1524" layer="1"/>
 <wire x1="9.6884" y1="14.6956" x2="8.5678" y2="13.575" width="0.1524" layer="1"/>
 <wire x1="8.5678" y1="13.575" x2="7.0822" y2="13.575" width="0.1524" layer="1"/>
-<wire x1="17.0822" y1="13.575" x2="14.238" y2="13.575" width="0.1524" layer="1"/>
+<wire x1="17.0822" y1="13.575" x2="17.006" y2="13.6512" width="0.1524" layer="1"/>
+<wire x1="17.006" y1="13.6512" x2="14.1618" y2="13.6512" width="0.1524" layer="1"/>
 <wire x1="13.1174" y1="14.6956" x2="9.6884" y2="14.6956" width="0.1524" layer="1"/>
-<wire x1="14.238" y1="13.575" x2="13.1174" y2="14.6956" width="0.1524" layer="1"/>
+<wire x1="14.1618" y1="13.6512" x2="13.1174" y2="14.6956" width="0.1524" layer="1"/>
 </signal>
 <signal name="N$2">
 <contactref element="IC3" pad="13"/>
@@ -1217,7 +1218,7 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <contactref element="U$2" pad="3"/>
 <contactref element="R7" pad="1"/>
 <wire x1="12.9178" y1="12.275" x2="13.633" y2="12.275" width="0.1524" layer="1"/>
-<wire x1="14.986" y1="10.922" x2="14.986" y2="10.911" width="0.1524" layer="1"/>
+<wire x1="14.986" y1="10.922" x2="14.986" y2="11.038" width="0.1524" layer="1"/>
 <wire x1="13.633" y1="12.275" x2="14.986" y2="10.922" width="0.1524" layer="1"/>
 <wire x1="17.0822" y1="12.275" x2="16.339" y2="12.275" width="0.1524" layer="1"/>
 <wire x1="16.339" y1="12.275" x2="14.986" y2="10.922" width="0.1524" layer="1"/>
