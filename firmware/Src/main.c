@@ -132,11 +132,12 @@ int main(void)
 0   button_power
 */
   spi_test(0);
-  uint16_t keypad = 0x20;
+  uint16_t keypad = 0x1010;
 
   while (1)
   {
     HAL_GPIO_TogglePin(USER_LED_GPIO_Port, USER_LED_Pin);
+    printf("%d\n", HAL_GetTick());
     spi_test(keypad);
     HAL_Delay(500);
   /* USER CODE END WHILE */
