@@ -41,6 +41,8 @@
 #include "stm32f0xx_hal.h"
 
 /* USER CODE BEGIN Includes */
+#include <stdio.h>
+#include <string.h>
 #include "helpers.h"
 #include "shared.h"
 /* USER CODE END Includes */
@@ -52,7 +54,9 @@ UART_HandleTypeDef huart2;
 
 /* USER CODE BEGIN PV */
 /* Private variables ---------------------------------------------------------*/
-
+linear_buf uart_lb;
+uint8_t uart_byte_buf[1];
+uint16_t keypad_buf;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -71,6 +75,12 @@ int fputc(int ch, FILE *f)
 {
     HAL_UART_Transmit(&huart2, (unsigned char *)&ch, 1, 100);
     return ch;
+}
+
+void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
+{
+  linear_buf_add(&uart_lb, uart_byte_buf[0]);
+  // printf("%c", uart_byte_buf[0]);
 }
 /* USER CODE END 0 */
 
@@ -106,7 +116,11 @@ int main(void)
   MX_USART2_UART_Init();
   MX_SPI1_Init();
   /* USER CODE BEGIN 2 */
-
+  spi_test(0);
+  HAL_Delay(500);
+  printf("pimp my microwave\n");
+  linear_buf_init(&uart_lb, 32);
+  
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -131,15 +145,53 @@ int main(void)
 1   button_time
 0   button_power
 */
-  spi_test(0);
-  uint16_t keypad = 0x1010;
-
   while (1)
   {
-    HAL_GPIO_TogglePin(USER_LED_GPIO_Port, USER_LED_Pin);
-    printf("%d\n", HAL_GetTick());
-    spi_test(keypad);
-    HAL_Delay(500);
+    HAL_UART_Receive_IT(&huart2, uart_byte_buf, 1);
+    if(linear_buf_line_available(&uart_lb))
+    {
+      keypad_buf = 0;
+      printf("I received: %s\n", uart_lb.buf);
+      if(strncmp(uart_lb.buf, "UART ", 5) != 0)
+        continue;
+
+      if(uart_lb.buf[5] == '0')
+        SetBit(keypad_buf, 5);
+      else if(uart_lb.buf[5] == '1')
+        SetBit(keypad_buf, 13);
+      else if(uart_lb.buf[5] == '2')
+        SetBit(keypad_buf, 14);
+      else if(uart_lb.buf[5] == '3')
+        SetBit(keypad_buf, 15);
+      else if(uart_lb.buf[5] == '4')
+        SetBit(keypad_buf, 8);
+      else if(uart_lb.buf[5] == '5')
+        SetBit(keypad_buf, 9);
+      else if(uart_lb.buf[5] == '6')
+        SetBit(keypad_buf, 10);
+      else if(uart_lb.buf[5] == '7')
+        SetBit(keypad_buf, 2);
+      else if(uart_lb.buf[5] == '8')
+        SetBit(keypad_buf, 3);
+      else if(uart_lb.buf[5] == '9')
+        SetBit(keypad_buf, 4);
+      else if(uart_lb.buf[5] == 'c')
+        SetBit(keypad_buf, 11);
+      else if(uart_lb.buf[5] == 's')
+        SetBit(keypad_buf, 12);
+      else if(uart_lb.buf[5] == 't')
+        SetBit(keypad_buf, 1);
+      else if(uart_lb.buf[5] == 'p')
+        SetBit(keypad_buf, 0);
+
+      printf("0x%x\n", keypad_buf);
+
+      spi_test(keypad_buf);
+      HAL_Delay(100);
+      spi_test(0);
+
+      linear_buf_reset(&uart_lb);
+    }
   /* USER CODE END WHILE */
 
   /* USER CODE BEGIN 3 */

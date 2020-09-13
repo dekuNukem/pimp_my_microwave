@@ -30,5 +30,6 @@ pmm\main.o: ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_spi.h
 pmm\main.o: ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_spi_ex.h
 pmm\main.o: ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_uart.h
 pmm\main.o: ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_uart_ex.h
+pmm\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 pmm\main.o: ../Inc/helpers.h
 pmm\main.o: ../Inc/shared.h
