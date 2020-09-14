@@ -153,7 +153,7 @@ int main(void)
       keypad_buf = 0;
       printf("I received: %s\n", uart_lb.buf);
       if(strncmp(uart_lb.buf, "UART ", 5) != 0)
-        continue;
+        goto done;
 
       if(uart_lb.buf[5] == '0')
         SetBit(keypad_buf, 5);
@@ -190,6 +190,7 @@ int main(void)
       HAL_Delay(100);
       spi_test(0);
 
+      done:
       linear_buf_reset(&uart_lb);
     }
   /* USER CODE END WHILE */
