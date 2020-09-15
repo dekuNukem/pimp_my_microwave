@@ -184,7 +184,7 @@ int main(void)
       else if(uart_lb.buf[5] == 'p')
         SetBit(keypad_buf, 0);
 
-      printf("0x%x\n", keypad_buf);
+      // printf("0x%x\n", keypad_buf);
 
       spi_test(keypad_buf);
       HAL_Delay(100);
