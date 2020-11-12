@@ -22,6 +22,8 @@ Here is the story of how I added a [RGB OLED hot-swap mechanical keypad](https:/
 
 ![Alt text](resources/pics/title.gif)
 
+[Click me](https://www.youtube.com/watch?v=BKcvKsYxbbo) for high-res video with sound!
+
 ## Background
 
 A year ago, I picked up a used microwave for £5 at a carboot sale. It was a "`Proline Micro Chef ST44`":
@@ -256,7 +258,7 @@ Have you ever experienced the crisp and clicky tactile and audible perfection of
 
 ## I want one too!
 
-If you're interested in a duckyPad, you can [learn more about it and get one here](https://www.kickstarter.com/projects/dekunukem/duckypad-do-it-all-mechanical-macropad)😅!
+If you're interested in a duckyPad, you can [learn more about it and  get one here](https://www.kickstarter.com/projects/dekunukem/duckypad-do-it-all-mechanical-macropad)😅!
 
 And if you want the whole package, unfortunately it would be much more involved.
 
