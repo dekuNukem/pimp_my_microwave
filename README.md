@@ -6,7 +6,7 @@
 
 Mechanical keyboards are all the rage these days! People love the satisfying tactile sensation, and some go on great lengths to customise them to their exact liking. 
 
-That begs the question: If people love it *that much*, why stop at just *computer* keyboards?
+That begs the question: If we love it *that much*, why stop at just *computer* keyboards?
 
 If you think about it, there are *plenty* of everyday input devices in desperate need of mech-ing up!
 
