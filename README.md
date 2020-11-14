@@ -148,7 +148,7 @@ Around the same time, I was working on [duckyPad](https://github.com/dekuNukem/d
 
 [Feel free to check out the project page](https://github.com/dekuNukem/duckyPad) if you're interested!
 
-It was called a `"Do-It-All Macropad"`, so to live up to its name, it was only natural that I get it working on my microwave too!
+I called it a `"Do-It-All Macropad"`, so to live up to its name, it was only natural that I get it working on my microwave too!
 
 And if I pull this off, my lowly 20-year-old second-hand broken microwave will transform into the *only one in the entire world* with mechanical switches and RGB lighting! Now that's what I call ... a Korean Custom 😅.
 
@@ -266,17 +266,17 @@ If you're interested in duckyPad, you can [learn more about it and get one here]
 
 And if you want the whole package, unfortunately it would be much more involved.
 
-Each microwave have different keypad layouts, so you'll need to figure them out, and design and build a PMM board yourself. Not a small feat, but at least all the information is here! If you do go down this path, let me know if you have any questions!
+Each microwave have different keypad matrix layouts, so you'll need to figure them out, and design and build a PMM board yourself. Not a small feat, but at least all the information is here! If you do go down this path, let me know if you have any questions!
 
 Of course there are high voltages and potential of microwave radiation when you take it apart, so be careful!
 
 ## Other Stuff
 
-I've done a few other fun projects over the years, feel free to check them out!
+I've done a few other fun projects over the years, feel free to check them out:
 
-[Daytripper](https://github.com/dekuNukem/daytripper): Hide-my-windows Laser Tripwire, saves the day while you slack off!
+[Daytripper: Hide-my-windows Laser Tripwire](https://github.com/dekuNukem/daytripper): Saves the day while you slack off!
 
-[exixe](https://github.com/dekuNukem/exixe): Miniture Nixie Tube driver module, eliminate the need for vintage driver chips and multiplexing circuits.
+[exixe: Miniture Nixie Tube driver module](https://github.com/dekuNukem/exixe): Eliminate the need for vintage chips and multiplexing circuits.
 
 [From Aduino to STM32](https://github.com/dekuNukem/STM32_tutorials): A detailed tutorial to get you started with STM32 development.
 
