@@ -18,7 +18,7 @@ For example... a `microwave keypad`??
 
 Yep you heard that right!
 
-Here is the story of how I added a [RGB OLED hot-swap mechanical keypad](https://github.com/dekuNukem/duckyPad) to create the most pimped-up microwave in the entire world!
+Here is the story of how I added a [RGB OLED hot-swap mechanical keypad](https://www.kickstarter.com/projects/dekunukem/duckypad-do-it-all-mechanical-macropad) to create the most pimped-up microwave in the entire world!
 
 ![Alt text](resources/pics/title.gif)
 
@@ -164,7 +164,7 @@ However, it wasn't as easy as it sounds. There are a number of challenges:
 
 Right now, there are 10 wires coming out of the case and into my hand-made keypad, very messy.
 
-Ideally, with duckyPad, I want it to use only need 3 wires: `Power`, `Ground`, and `Data`. With so few wires, they can be inside a single cable, which would be much more clean and tidy.
+Ideally, with duckyPad, I want it to use only 3 wires: `Power`, `Ground`, and `Data`. With so few wires, they can be inside a single cable, which would be much more clean and tidy.
 
 However, the microwave controller still expects 10 wires from the keypad matrix. So that means I would need an adapter of some sort. Let's just call it PMM board.
 
@@ -252,19 +252,35 @@ I attached the duckyPad to the microwave, chopped off the ends of a cheap USB ca
 
 Voilà! It's done! The first and (probably) only microwave in the entire universe with mechanical switches, OLED, and RGB lighting!
 
-Have you ever experienced the crisp and clicky tactile and audible perfection of Gateron Green switches while heating up some frozen junk food because you're too lazy to cook? Well, *I* have, so there's that!
+Have you ever experienced the crisp and clicky tactile and audible perfection of Gateron Greens while heating up some frozen junk food at 2am because you're too lazy to cook? Well, *I* have, so there's that!
 
 ![Alt text](resources/pics/done.png)
 
+![Alt text](resources/pics/title.gif)
+
+[Click me](https://www.youtube.com/watch?v=BKcvKsYxbbo) for high-res video with sound!
+
 ## I want one too!
 
-If you're interested in a duckyPad, you can [learn more about it and  get one here](https://www.kickstarter.com/projects/dekunukem/duckypad-do-it-all-mechanical-macropad)😅!
+If you're interested in duckyPad, you can [learn more about it and get one here](https://www.kickstarter.com/projects/dekunukem/duckypad-do-it-all-mechanical-macropad)😅!
 
 And if you want the whole package, unfortunately it would be much more involved.
 
 Each microwave have different keypad layouts, so you'll need to figure them out, and design and build a PMM board yourself. Not a small feat, but at least all the information is here! If you do go down this path, let me know if you have any questions!
 
 Of course there are high voltages and potential of microwave radiation when you take it apart, so be careful!
+
+## Other Stuff
+
+I've done a few other fun projects over the years, feel free to check them out!
+
+[Daytripper](https://github.com/dekuNukem/daytripper): Hide-my-windows Laser Tripwire, saves the day while you slack off!
+
+[exixe](https://github.com/dekuNukem/exixe): Miniture Nixie Tube driver module, eliminate the need for vintage driver chips and multiplexing circuits.
+
+[From Aduino to STM32](https://github.com/dekuNukem/STM32_tutorials): A detailed tutorial to get you started with STM32 development.
+
+[List of all my repos](https://github.com/dekuNukem?tab=repositories)
 
 ## Questions or Comments?
 
