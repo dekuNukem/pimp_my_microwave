@@ -1,6 +1,6 @@
 # Pimp My Microwave
 
-[More about duckyPad](https://www.kickstarter.com/projects/dekunukem/duckypad-do-it-all-mechanical-macropad) | [Official Discord](https://discord.gg/4sJCBx5)
+[More about duckyPad](https://github.com/dekuNukem/duckyPad) | [Official Discord](https://discord.gg/4sJCBx5)
 
 -----
 
@@ -18,7 +18,7 @@ For example... a `microwave keypad`??
 
 Yep you heard that right!
 
-Here is the story of how I added a [RGB OLED hot-swap mechanical keypad](https://www.kickstarter.com/projects/dekunukem/duckypad-do-it-all-mechanical-macropad) to create the most pimped-up microwave in the entire world!
+Here is the story of how I added a [RGB OLED hot-swap mechanical keypad](https://github.com/dekuNukem/duckyPad) to create the most pimped-up microwave in the entire world!
 
 ![Alt text](resources/pics/title.gif)
 
@@ -262,7 +262,7 @@ Have you ever experienced the crisp and clicky tactile and audible perfection of
 
 ## I want one too!
 
-If you're interested in duckyPad, you can [learn more about it and get one here](https://www.kickstarter.com/projects/dekunukem/duckypad-do-it-all-mechanical-macropad)😅!
+If you're interested in duckyPad, you can [learn more about it here](https://github.com/dekuNukem/duckyPad)😅!
 
 And if you want the whole package, unfortunately it would be much more involved.
 
