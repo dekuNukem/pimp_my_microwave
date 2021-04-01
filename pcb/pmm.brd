@@ -46,10 +46,10 @@
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
-<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
-<layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
-<layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
-<layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
@@ -786,8 +786,8 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <attribute name="VALUE" x="-1.016" y="19.177" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="U$5" library="adafruit_changed" package="1X05" value="PINHD5" x="27.94" y="11.5316" smashed="yes" rot="R270"/>
-<element name="C3" library="clock" package="0805@1" value="10uF" x="24.638" y="10.414" smashed="yes" rot="R90">
-<attribute name="NAME" x="25.146" y="8.6995" size="0.8128" layer="25" rot="R180"/>
+<element name="C3" library="clock" package="0805@1" value="10uF" x="24.9936" y="10.414" smashed="yes" rot="R90">
+<attribute name="NAME" x="25.5016" y="8.6995" size="0.8128" layer="25" rot="R180"/>
 </element>
 <element name="C5" library="clock" package="0805@1" value="10uF" x="24.638" y="13.843" smashed="yes" rot="R270">
 <attribute name="NAME" x="24.13" y="15.3035" size="0.8128" layer="25"/>
@@ -1038,7 +1038,7 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <contactref element="IC2" pad="2"/>
 <contactref element="IC2" pad="4"/>
 <contactref element="C2" pad="1"/>
-<polygon width="0.1524" layer="16">
+<polygon width="0.1524" layer="16" isolate="0.254">
 <vertex x="0" y="35"/>
 <vertex x="30" y="35"/>
 <vertex x="30" y="0"/>
@@ -1173,8 +1173,9 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <contactref element="C5" pad="2"/>
 <wire x1="27.94" y1="10.2616" x2="26.9494" y2="10.2616" width="0.3048" layer="1"/>
 <wire x1="26.9494" y1="10.2616" x2="25.897" y2="11.314" width="0.3048" layer="1"/>
-<wire x1="25.897" y1="11.314" x2="24.638" y2="11.314" width="0.3048" layer="1"/>
-<wire x1="24.638" y1="11.314" x2="24.638" y2="12.943" width="0.3048" layer="1"/>
+<wire x1="25.897" y1="11.314" x2="24.9936" y2="11.314" width="0.3048" layer="1"/>
+<wire x1="24.9936" y1="12.5874" x2="24.9936" y2="11.314" width="0.3048" layer="1"/>
+<wire x1="24.9936" y1="12.5874" x2="24.638" y2="12.943" width="0.3048" layer="1"/>
 <wire x1="22.9178" y1="12.925" x2="24.62" y2="12.925" width="0.3048" layer="1"/>
 <wire x1="24.62" y1="12.925" x2="24.638" y2="12.943" width="0.3048" layer="1"/>
 <wire x1="22.871" y1="15.24" x2="22.871" y2="14.975" width="0.1524" layer="1"/>
